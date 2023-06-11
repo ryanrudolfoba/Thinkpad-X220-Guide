@@ -41,4 +41,15 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
    sudo systemctl enable tlp.service\
    sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket\
    sudo dnf install kernel-devel akmod-tp_smapi
-6. 
+   
+6. Install packages for rpmfusion multimedia -\
+   sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+   sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+   sudo dnf groupupdate sound-and-video
+   sudo dnf install libva-intel-driver
+   sudo dnf install rpmfusion-free-release-tainted
+   sudo dnf install libdvdcss
+   sudo dnf install rpmfusion-nonfree-release-tainted
+   sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
+7. asdada
+8. 
