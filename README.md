@@ -33,7 +33,7 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
 
 ## Software Configuration
 1. Remove unneeded packages -\
-   sudo dnf remove iwl* hyperv* open-vm* qemu-guest* b43*
+   sudo dnf remove iwl* hyperv* open-vm* qemu-guest* b43* xorg-x11-drv-amdgpu xorg-x11-drv-vmware xorg-x11-drv-nouveau xorg-x11-drv-ati xorg-x11-drv-wacom amd* nvidia* qt5-qdbusviewer akregator k3b elisa* dragon*
 
 2. Install rpmfusion repositories -\
    sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -55,7 +55,6 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
    sudo dnf install libva-intel-driver\
    sudo dnf install rpmfusion-free-release-tainted\
    sudo dnf install libdvdcss\
-   sudo dnf install rpmfusion-nonfree-release-tainted\
-   sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"\
+   sudo dnf install rpmfusion-nonfree-release-tainted
 
 6. To be continued. . .
