@@ -1,8 +1,8 @@
 # Thinkpad X220 Guide
-Steps I did to rebuild my old Thinkpad X220 and make it usable in 2023!
+Work in Progress - This is to document the steps I did to rebuild my old Thinkpad X220 from 2011 and make it usable in 2023!
 
 # Why?!?
-I don't have a good reason except that I like the 7row keyboard, Thinklight, it is compact and it still works good in 2023 - 12 years after its initial release!
+I don't have a good reason except that I like the 7row keyboard, Thinklight, it is compact and it still works good in 2023!!!
 
 ## Hardware Configuration
 CPU - Intel 2.6GHz Core i5 2540M\
@@ -35,21 +35,21 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
 3. Install tlp repository -\
    sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
    
-5. Install tlp -\
+4. Install tlp -\
    sudo dnf install tlp tlp-rdw\
    sudo dnf remove power-profiles-daemon\
    sudo systemctl enable tlp.service\
    sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket\
    sudo dnf install kernel-devel akmod-tp_smapi
    
-6. Install packages for rpmfusion multimedia -\
-   sudo dnf swap ffmpeg-free ffmpeg --allowerasing
-   sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-   sudo dnf groupupdate sound-and-video
-   sudo dnf install libva-intel-driver
-   sudo dnf install rpmfusion-free-release-tainted
-   sudo dnf install libdvdcss
-   sudo dnf install rpmfusion-nonfree-release-tainted
-   sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
-7. asdada
-8. 
+5. Install packages for rpmfusion multimedia -\
+   sudo dnf swap ffmpeg-free ffmpeg --allowerasing\
+   sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin\
+   sudo dnf groupupdate sound-and-video\
+   sudo dnf install libva-intel-driver\
+   sudo dnf install rpmfusion-free-release-tainted\
+   sudo dnf install libdvdcss\
+   sudo dnf install rpmfusion-nonfree-release-tainted\
+   sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"\
+
+6. To be continued. . .
