@@ -28,10 +28,10 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
 
 ## Software Configuration
 1. Remove unneeded packages -\
-   sudo dnf remove iwl* hyperv* open-vm* qemu-guest* b43*\
+   sudo dnf remove iwl* hyperv* open-vm* qemu-guest* b43*
 
 2. Install rpmfusion repositories -
-   sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm\
+   sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 3. Install tlp repository -
    sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
    
