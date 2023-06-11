@@ -14,21 +14,31 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
 
 
 ## OS Installation
-1. Download Fedora 38 Everything ISO. It is the minimal net installer for Fedora.\
-2. Burn the ISO using Ventoy.\
-3. Boot the ISO and on the software selection select KDE desktop.\
+1. Download Fedora 38 Everything ISO. It is the minimal net installer for Fedora.
+2. Burn the ISO using Ventoy.
+3. Boot the ISO and on the software selection select KDE desktop.
 4. Perform a manual disk partitioning with this layout - \
    400MB ESP mounted as /boot/efi\
    128GB xfs mounted as /\
    16GB swap\
    the remaining as xfs mounted as /home\
-5. Create the user account and assign the password.\
-6. Start the install process. This will take around 10 minutes as the packages are downloaded and installed.\
+5. Create the user account and assign the password.
+6. Start the install process. This will take around 10 minutes as the packages are downloaded and installed.
 
 
 ## Software Configuration
 1. Remove unneeded packages -\
-    sudo dnf remove iwl* hyperv* open-vm* qemu-guest* b43*\
+   sudo dnf remove iwl* hyperv* open-vm* qemu-guest* b43*\
 
-2. sadsaa
-3.
+2. Install rpmfusion repositories -
+   sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm\
+3. Install tlp repository -
+   sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
+   
+5. Install tlp -\
+   sudo dnf install tlp tlp-rdw\
+   sudo dnf remove power-profiles-daemon\
+   sudo systemctl enable tlp.service\
+   sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket\
+   sudo dnf install kernel-devel akmod-tp_smapi
+6. 
