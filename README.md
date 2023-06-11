@@ -15,14 +15,19 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
 
 ## OS Installation
 1. Download Fedora 38 Everything ISO. It is the minimal net installer for Fedora.
+
 2. Burn the ISO using Ventoy.
+
 3. Boot the ISO and on the software selection select KDE desktop.
+
 4. Perform a manual disk partitioning with this layout - \
    400MB ESP mounted as /boot/efi\
    128GB xfs mounted as /\
    16GB swap\
-   the remaining as xfs mounted as /home\
+   the remaining as xfs mounted as /home
+
 5. Create the user account and assign the password.
+
 6. Start the install process. This will take around 10 minutes as the packages are downloaded and installed.
 
 
@@ -32,6 +37,7 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
 
 2. Install rpmfusion repositories -\
    sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 3. Install tlp repository -\
    sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
    
