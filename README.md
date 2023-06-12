@@ -1,16 +1,20 @@
-# Thinkpad X220 Guide
+# Thinkpad X220 / T420s Guide
 Work in Progress - This is to document the steps I did to rebuild my old Thinkpad X220 from 2011 and make it usable in 2023!
+
+Initially this is for the Thinkpad X220, but after using it for several days the biggest drawback for me is the 1366x768 TN screen. I decided to remove the components and transplant it to my T420s instead.
 
 # Why?!?
 I don't have a good reason except that I like the 7row keyboard, Thinklight, it is compact and it still works good in 2023!!!
 
-## Hardware Configuration
-CPU - Intel 2.6GHz Core i5 2540M\
-RAM - 2x8GB SODIMM DDR3\
+## Hardware Configuration / Hardware Mods
+CPU - Intel 3.2GHz Core i5 2520M\
+Display - 1080p IPS panel using LVDS to eDP converter\
+RAM - 16GB SODIMM DDR3 RAM\
 Main Storage - 2TB SATA SSD\
-Secondary Storage - 256GB mSATA SSD (awaiting parts)\
-WIFI - Alfa AWPCIE 1900 RTL8814au\
-Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
+Secondary Storage - 256GB mSATA SSD via cdrom caddy\
+WIFI1 - Alfa AWPCIE 1900 RTL8814au\
+WIFI2 - Intel Centrino Advanced-N 6205\
+Bluetooth - none
 
 
 ## OS Installation
@@ -18,7 +22,7 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
 
 2. Burn the ISO using Ventoy.
 
-3. Boot the ISO and on the software selection select KDE desktop.
+3. Boot the ISO and on the software selection select KDE desktop, Firefox web browser, KDE Multimedia support, LibreOffice, C Development Tools and Libraries.
 
 4. Perform a manual disk partitioning with this layout - \
    400MB ESP mounted as /boot/efi\
@@ -58,6 +62,6 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
    sudo dnf install rpmfusion-nonfree-release-tainted
 
 6. Install packages -\
-   sudo dnf install git zcfan rtorrent mpv android-tools neofetch mpd ncmpc unrar discord
+   sudo dnf install git zcfan rtorrent mpv android-tools neofetch mpd ncmpc unrar discord lm_sensors
    
 7. To be continued. . .
