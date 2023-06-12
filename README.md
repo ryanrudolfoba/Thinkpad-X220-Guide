@@ -1,7 +1,7 @@
 # Thinkpad X220 / T420s Guide
 Work in Progress - This is to document the steps I did to rebuild my old Thinkpad X220 from 2011 and make it usable in 2023!
 
-Initially this is for the Thinkpad X220, but after using it for several days the biggest drawback for me is the 1366x768 TN screen. I decided to remove the components and transplant it to my T420s instead.
+Initially this is for the Thinkpad X220, but after using it for several days the biggest drawback for me is the 1366x768 TN panel. I decided to remove the components and transplant it to my T420s instead with a 1080p IPS panel.
 
 # Why?!?
 I don't have a good reason except that I like the 7row keyboard, Thinklight, it is compact and it still works good in 2023!!!
