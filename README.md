@@ -57,7 +57,7 @@ Bluetooth - TPLINK Bluetooth 5.0 USB dongle via
    sudo dnf install libdvdcss\
    sudo dnf install rpmfusion-nonfree-release-tainted
 
-6. Install packages -
-   sudo dnf install thinkfan rtorrent mpv android-tools neofetch mpd ncmpc unrar discord
+6. Install packages -\
+   sudo dnf install git zcfan rtorrent mpv android-tools neofetch mpd ncmpc unrar discord
    
 7. To be continued. . .
