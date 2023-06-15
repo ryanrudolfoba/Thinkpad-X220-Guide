@@ -35,7 +35,7 @@ Bluetooth - none
 6. Start the install process. This will take around 10 minutes as the packages are downloaded and installed.
 
 
-## Software Configuration
+## Software Installation
 1. Remove unneeded packages -\
    sudo dnf remove iwl* hyperv* open-vm* qemu-guest* b43* xorg-x11-drv-amdgpu xorg-x11-drv-vmware xorg-x11-drv-nouveau xorg-x11-drv-ati xorg-x11-drv-wacom amd* nvidia* qt5-qdbusviewer akregator k3b elisa* dragon*
 
@@ -61,7 +61,21 @@ Bluetooth - none
    sudo dnf install libdvdcss\
    sudo dnf install rpmfusion-nonfree-release-tainted
 
-6. Install packages -\
+6. Install packages for hardware acceleration -\
+   sudo dnf install libva-utils \
+   sudo dnf install libva-intel-driver\
+   sudo dnf install libva-vdpau-driver \
+   sudo dnf install libvdpau-va-gl \
+   sudo dnf install igt-gpu-tools
+   
+8. Install packages -\
    sudo dnf install git zcfan rtorrent mpv android-tools neofetch mpd ncmpc unrar discord lm_sensors
    
-7. To be continued. . .
+9. To be continued. . .
+10. 
+
+## Software Configuration
+1. Enable hardware decoding in mpv - \
+   echo hwdec=auto >> ~/.config/mpv/mpv.conf
+   
+3. To be continued. . .
