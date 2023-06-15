@@ -79,5 +79,15 @@ Bluetooth - Bluetooth 4.0 via Intel Dual Band 7260ac
 ## Software Configuration
 1. Enable hardware decoding in mpv - \
    echo hwdec=auto >> ~/.config/mpv/mpv.conf
-   
+
+2. Configure fan control via zcfan - \
+   sudo tee /etc/zcfan.conf.test << EOF \
+   max_temp 70 \
+   med_temp 65 \
+   low_temp 60 \
+   EOF
+
+   sudo systemctl enable zcfan \
+   sudo systemctl start zcfan
+
 3. To be continued. . .
