@@ -5,7 +5,8 @@ Initially this is for the Thinkpad X220, but after using it for several days the
 
 # Why?!?
 I don't have a good reason except that I like the 7row keyboard, Thinklight, it is compact and it still works good in 2023!!!
-![image](https://github.com/ryanrudolfoba/Thinkpad-X220-Guide/assets/98122529/2d12f99f-ec8f-4e8a-bbfc-b07357cd43a5)
+![image](https://github.com/ryanrudolfoba/Thinkpad-X220-Guide/assets/98122529/1bb43929-2825-4c53-b60f-3cb5688ff0af)
+
 
 ## Hardware Configuration / Hardware Mods
 CPU - Intel 2.5GHz Core i5 2520M \
