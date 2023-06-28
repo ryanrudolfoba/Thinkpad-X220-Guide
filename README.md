@@ -73,10 +73,12 @@ Bluetooth - Bluetooth 4.0 via Intel Dual Band 7260ac
    sudo dnf install igt-gpu-tools
    
 8. Install packages -\
-   sudo dnf install git zcfan rtorrent mpv android-tools neofetch mpd ncmpc unrar discord lm_sensors
+   sudo dnf install git zcfan rtorrent mpv android-tools neofetch mpd ncmpc unrar discord lm_sensors java-17-openjdk
    
-9. To be continued. . .
-10. 
+9. Install jdownlader2 \
+
+10. To be continued . . .
+
 
 ## Software Configuration
 1. Enable hardware decoding in mpv - \
