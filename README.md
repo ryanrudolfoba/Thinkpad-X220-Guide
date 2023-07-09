@@ -85,12 +85,13 @@ Bluetooth - Bluetooth 4.0 via Intel Dual Band 7260ac
    echo hwdec=auto >> ~/.config/mpv/mpv.conf
 
 2. Configure fan control via zcfan - \
-   sudo tee /etc/zcfan.conf.test << EOF \
+   sudo tee /etc/zcfan.conf << EOF \
    max_temp 70 \
    med_temp 65 \
    low_temp 60 \
    EOF
 
+   rmmod thinkpad_acpi && modprobe thinkpad_acpi fan_control=1 \
    sudo systemctl enable zcfan \
    sudo systemctl start zcfan
 
